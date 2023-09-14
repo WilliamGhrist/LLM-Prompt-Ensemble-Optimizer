@@ -81,6 +81,7 @@ def local_llama(question, num_variations):
     llm = TextGen(model_url=model_url)
     
     response = generate_chain(llm, question, num_variations)
+
     process.terminate()
 
     return response
