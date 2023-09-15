@@ -1,6 +1,10 @@
 # LLM-Prompt-Ensemble-Optimizer
 
-Demo Video
+<video width="320" height="240" controls>
+  <source src="https://raw.githubusercontent.com/WilliamGhrist/LLM-Prompt-Ensemble-Optimizer-/main/Demos/Demo.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
 ## Table of Contents
 1. [Project Description](#project-description)
 2. [Training the Local Model](#training-the-local-model)
@@ -13,12 +17,14 @@ Demo Video
 Brief description about your project.
 
 ## Downlaoding, Running, and Training the Local Model
+
 Steps or details on how to train the model.
 including screenshots and data
+
+
 ## Install and Run the Project
 
 Instructions on how to install and run your project.
-
 
 ## Built Using
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
