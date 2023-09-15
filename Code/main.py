@@ -8,7 +8,7 @@ import os
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 
-# Defines the shared components of the LLM chains and alows for the different models to be passed in reducing code redundancy.
+# Defines the shared components of the LLM chains and allows for the different models to be passed in reducing code redundancy.
 # This will aid scalability in the future if more Language Models are added, so the same components don't have to keep being defined.
 def generate_chain(llm, question, num_variations):
 
@@ -61,7 +61,7 @@ def openAI_gpt(question, num_variations):
     return generate_chain(llm, question, num_variations)
 
 
-# Generates answers using the locally ran and finetuned Llama model.
+# Generates answers using the locally run and finetuned Llama model.
 def local_llama(question, num_variations):
 
     """
@@ -72,7 +72,7 @@ def local_llama(question, num_variations):
     Returns:
     - text: The generated answer from the local Llama model
     """
-
+    #here I am running a subprocess terminal command to spin up the local LLM, apply the fine tuned LoRA weights, and enable the API.
     cmd = ["python", "/home/ghrist/text-generation-webui/server.py", "--model", "Llama-2-7b-hf", "--lora", "test-4bit", "--api"]
     process = subprocess.Popen(cmd, cwd="/home/ghrist/text-generation-webui")
     langchain.debug = True
@@ -82,12 +82,13 @@ def local_llama(question, num_variations):
     
     response = generate_chain(llm, question, num_variations)
 
+    #terminate the subprocess so the script can continue.
     process.terminate()
 
     return response
 
 
-# Consolidates a list of answers into a single ultimate answer controlling for randomness.
+# Consolidates the list of answers into a single ultimate answer controlling for randomness.
 def answer_consolidator_chain(all_answers):
 
     """

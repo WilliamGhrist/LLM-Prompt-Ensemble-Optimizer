@@ -10,6 +10,7 @@ variations = st.selectbox("Select the number of variations sent to each LLM:", o
 if st.button('Submit'):
     # Check if both user_input and variations are provided
     if user_input and variations:
+        
         # Run the two chains with the user's input and variations
         openAI_answers = openAI_gpt(user_input, variations)
         local_llama_answers = local_llama(user_input, variations)
