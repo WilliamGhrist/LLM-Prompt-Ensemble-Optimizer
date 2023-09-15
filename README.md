@@ -1,7 +1,9 @@
 # LLM-Prompt-Ensemble-Optimizer
 
-![Alt text for image 1](Demos/Screenshot 1.png)
-![Alt text for image 2](Demos/Screenshot 2.png)
+<img src="https://github.com/WilliamGhrist/LLM-Prompt-Ensemble-Optimizer/assets/133531386/4a96a955-b3ca-45c4-aa66-14b97c496ff2" width="600">
+
+<img src="https://github.com/WilliamGhrist/LLM-Prompt-Ensemble-Optimizer/assets/133531386/ae6985f9-cdb0-48d8-88fc-279898e49949" width="600">
+
 
 ## Table of Contents
 1. [Project Description](#project-description)
@@ -41,7 +43,8 @@ This means that while the tool mostly preforms well, there might still be occasi
     "input":""
     "output":""
     ``` 
-    Feel free to use the dataset I created specificaly for this project [alpaca_formated_dataset](Alpaca formatted LoRA training data/alpaca_formated.json)
+    Feel free to use the dataset I created specificaly for this project [alpaca_formated_dataset](Alpaca%20formatted%20LoRA%20training%20data/alpaca_formated.json)
+
 
 5. On the Training tab of the TextGen tool, name your LoRA, set your parameters, select your training data set, and hit Start LoRA Training.
 
@@ -103,3 +106,8 @@ Thanks to Oobabooga for the [TextGen WebUI](https://github.com/oobabooga/text-ge
 ## Contact
 
 [Linkedin](https://www.linkedin.com/in/william-ghrist-736509203)
+
+
+
+
+
