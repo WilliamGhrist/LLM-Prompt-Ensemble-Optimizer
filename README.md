@@ -9,7 +9,7 @@
 1. [Project Description](#project-description)
 2. [Training the Local Model](#training-the-local-model)
 3. [Install and Run the Project](#install-and-run-the-project)
-4. [Build Using](#build-using)
+4. [Built Using](#build-using)
 5. [Acknowledgements](#acknowledgements)
 6. [Contact](#contact)
 
